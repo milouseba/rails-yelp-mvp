@@ -1,0 +1,11 @@
+<h1><%= @restaurant.name %></h1>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.phone_number %></p>
+<p><%= @restaurant.category %></p>
+
+<% Review.where(restaurant_id: @restaurant.id).each do |review| %>
+<ul>
+  <li><%= review.content %></li>
+  <li><%= review.rating %></li>
+</ul>
+<% end %>
