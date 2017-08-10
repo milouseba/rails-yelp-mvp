@@ -16,3 +16,17 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require_tree .
+
+// document.getElementById('restaurant_category').style.backgroundColor = "#DDF4FF";
+
+// document.querySelector('.container').style.backgroundColor = "#DDF4FF";
+document.getElementById('restaurant_category').addEventListener('change', (event) => {
+  // const category = event.target.value;
+  // console.log(event.target.value);
+  //document.querySelector('.container').style.backgroundColor = "#DDF4FF";
+  // document.querySelector('.container').style.backgroundImage = "url('chinese.jpeg')";
+  // document.querySelector(".container").style.background = 'chinese.jpeg';
+  document.querySelector('.container').style.backgroundImage = 'url()';
+  document.querySelector('.container').style.backgroundSize = "700px";
+});
+
